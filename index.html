@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <h1>WebDev Portfolio</h1>
+    <head>
+        <style>
+            /* This is the style for the whole body of the webpage */
+            body {
+                /* This sets the background color to a slightly dark tan color. 
+                The color is specified using a hexadecimal color code. */
+                background-color: #D2B48C;
+                /* This sets the color of the text to a dark gray color. 
+                The color is specified using a hexadecimal color code. */
+                color: #333;
+            }
+            /* This is the style for the h1 headings */
+            h1 {
+                /* This adds a border around the h1 headings. 
+                The border is 1 pixel wide, solid, and dark gray. */
+                border: 1px solid #333;
+                /* This adds some space around the text inside the h1 headings. 
+                The space is 10 pixels wide on all sides. */
+                padding: 10px;
+                /* This sets the background color of the h1 headings to white. 
+                The color is specified using a hexadecimal color code. */
+                background-color: #fff;
+                /* This adds an animation to the h1 headings called "glow" that lasts 2 seconds and repeats forever. */
+                animation: glow 2s infinite;
+            }
+            /* This is the definition of the "glow" animation */
+            @keyframes glow {
+                /* At the start of the animation (0% of the time), 
+                the h1 headings have a small shadow that makes them look like they're glowing a little. 
+                The shadow is 5 pixels wide and dark gray. */
+                0% { box-shadow: 0 0 5px #333; }
+                /* In the middle of the animation (50% of the time), 
+                the h1 headings have a bigger shadow that makes them look like they're glowing a lot. 
+                The shadow is 20 pixels wide and dark gray, with an extra 30 pixel wide glow. */
+                50% { box-shadow: 0 0 20px #333, 0 0 30px #333; }
+                /* At the end of the animation (100% of the time), 
+                the h1 headings have a small shadow again. 
+                The shadow is 5 pixels wide and dark gray. */
+                100% { box-shadow: 0 0 5px #333; }
+            }
+        </style>
+    </head>
     <body>
+        <h1>WebDev Portfolio</h1>
         <h1>Projects</h1>
         <div>
-            <h2>HTML</h2>
-            <h3>Tags</h3>
-            <h3>Features</h3>
+
         </div>
         <div>
-            <h2>CSS</h2>
-            <h3>Styles</h3>
-            <h3>Features</h3>
+            
         </div>
         <div>
-            <h2>Media</h2>
+        </div>
+        <div>
+            <h1>Web Development Resources</h1>
+            <a href="https://www.codecademy.com/catalog/language/html-css">HTML & CSS Catalog</a>
+            <a href="https://www.codecademy.com/catalog/language/javascript">Javascript Catalog</a>
+            <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=1s">HTML & CSS Full Course</a>
+        </div>
+        <div>
+            <!-- This is an iframe that shows a YouTube video. It's like a little window to another webpage. 
+            The width and height attributes set the size of the iframe. 
+            The src attribute sets the URL of the webpage to show in the iframe. 
+            The frameborder attribute sets whether to show a border around the iframe (0 means no border). 
+            The allow attribute sets what features the webpage in the iframe is allowed to use. 
+            The allowfullscreen attribute allows the video to be played in fullscreen mode. -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G3e-cpL7ofc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </body>
-    <div>
-        <h1>Web Development Resources</h1>
-        <a href="https://www.codecademy.com/catalog/language/html-css">HTML & CSS Catalog</a>
-        <a href="https://www.codecademy.com/catalog/language/javascript">Javascript Catalog</a>
-        <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=1s">HTML & CSS Full Course</a>
-    </div>
-    <div>
-        <video Source src="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=1s" type=video/mp4>
-    </div>
 </html>
-
-
