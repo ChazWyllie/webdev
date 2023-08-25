@@ -26,6 +26,58 @@
             background-color: #fff;
             /* This adds an animation to the h1 headings called "glow" that lasts 2 seconds and repeats forever. */
             animation: glow 2s infinite;
+            /* This will animate the growth when hovered */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* This will grow the h1 when hovered over */
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        /* This will add a smooth drop animation when the h1 is clicked */
+        h1:active {
+            animation: drop 0.3s ease-in-out;
+        }
+
+        /* This is the definition of the "drop" animation */
+        @keyframes drop {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* This is the style for the links. They are hidden by default. */
+        .resource-link {
+            display: none;
+            /* This adds a border around the links. 
+                The border is 1 pixel wide, solid, and dark gray. */
+            border: 1px solid #333;
+            /* This adds some space around the text inside the links. 
+                The space is 5 pixels wide on all sides. */
+            padding: 5px;
+            /* This sets the background color of the links to white. 
+                The color is specified using a hexadecimal color code. */
+            background-color: #fff;
+            /* This makes the corners of the links slightly curved. 
+                The radius of the curve is 5 pixels. */
+            border-radius: 5px;
+            /* This adds some space between the links. 
+                The space is 5 pixels wide on all sides. */
+            margin: 5px;
+        }
+
+        /* This will add a grey border around the links when the h1 is clicked */
+        h1:active~.resource-link {
+            border-color: grey;
         }
 
         /* This is the definition of the "glow" animation */
@@ -51,11 +103,6 @@
             100% {
                 box-shadow: 0 0 5px #333;
             }
-        }
-
-        /* This is the style for the links. They are hidden by default. */
-        .resource-link {
-            display: none;
         }
     </style>
 
@@ -91,7 +138,8 @@
         <!-- These are the links. They have the class "resource-link" so the toggleLinks function can find them. -->
         <a class="resource-link" href="https://www.codecademy.com/catalog/language/html-css">HTML & CSS Catalog</a>
         <a class="resource-link" href="https://www.codecademy.com/catalog/language/javascript">Javascript Catalog</a>
-        <a class="resource-link" href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=1s">HTML & CSS Full Course</a>
+        <a class="resource-link" href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=1
+                <a class="resource-link" href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=1">HTML & CSS Full Course</a>
     </div>
     <div>
         <!-- This is an iframe that shows a YouTube video. It's like a little window to another webpage. 
