@@ -7,10 +7,10 @@
         body {
             /* This sets the background color to a slightly dark tan color. 
                 The color is specified using a hexadecimal color code. */
-            background-color: #D2B48C;
+            background-color: #303030;
             /* This sets the color of the text to a dark gray color. 
                 The color is specified using a hexadecimal color code. */
-            color: #333;
+            color: #ffffff;
         }
 
         /* This is the style for the h1 headings */
@@ -20,19 +20,21 @@
             border: 1px solid #333;
             /* This adds some space around the text inside the h1 headings. 
                 The space is 10 pixels wide on all sides. */
-            padding: 10px;
+            padding: 6px;
             /* This sets the background color of the h1 headings to white. 
                 The color is specified using a hexadecimal color code. */
-            background-color: #fff;
+            background-color: #242424;
             /* This adds an animation to the h1 headings called "glow" that lasts 2 seconds and repeats forever. */
-            animation: glow 2s infinite;
+            animation: glow 3s infinite;
             /* This will animate the growth when hovered */
             transition: transform 0.3s ease-in-out;
+
+            font-family: Roboto, Arial, sans-serif
         }
 
         /* This will grow the h1 when hovered over */
         h1:hover {
-            transform: scale(1.1);
+            transform: scale(1.01);
         }
 
         /* This will add a smooth drop animation when the h1 is clicked */
@@ -123,7 +125,12 @@
 
 <body>
     <h1>WebDev Portfolio</h1>
+    <h1>About Me</h1>
+    <h1>Contact</h1>
+    <h1>Skills</h1>
     <h1>Projects</h1>
+    <h1>Work Experience</h1>
+
     <div>
 
     </div>
@@ -154,5 +161,4 @@
             allowfullscreen></iframe>
     </div>
 </body>
-
 </html>
